@@ -1,0 +1,72 @@
+
+/* O-CompS' best selling products */
+#deals {
+    padding-bottom: 40px;
+}
+
+#deals h2 {
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#deals .cta {
+    /* width: 240px;
+    height: auto; */
+
+    padding: 10px 20px;
+    height: auto;
+}
+
+.bestselling_deals {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+
+    padding: 0 40px;
+    margin: 0 60px;
+
+    /* overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    flex-basis: calc(100%/4); */
+}
+
+.bestselling_deals img {
+    max-height: 190px;
+    max-width: 90%;
+}
+
+.best_deal {
+    padding: 20px 20px 15px 20px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 340px; */
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 0; /* dont grow beyond original size */
+    flex-shrink: 0; /* if no space, dont shrink */
+}
+.best_deal img {
+    max-height: 120px;
+    /* max-width: 90%; */
+}
+
+.best_deal p {
+    padding-top: 5px;
+    font-size: 13px;
+    color: blue;
+}
+
+.best_deal a {
+    text-decoration: none;
+}
+.best_deal a:hover p{
+    text-decoration: underline;
+    color: darkblue;
+}
